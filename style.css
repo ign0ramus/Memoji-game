@@ -49,7 +49,6 @@ body {
     backface-visibility: hidden;
     width: 100%;
     height: 100%;
-    border: 5px solid white;
     border-radius: 9px;
     box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.5);
 }
@@ -57,6 +56,7 @@ body {
 .card_block__card--back {
     background: linear-gradient(45deg, #22AB93, #19668D );
     position: relative;
+    border: 5px solid white;
 }
 .card_block__card--back:hover {
     opacity: 0.85;
@@ -70,13 +70,28 @@ body {
     transform: rotateY(180deg);
     text-align: center;
     font-size: 75px;
-}
-
-span {
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .flip {
     transform: rotateY(180deg);
+}
+
+.keep_flipped {
+    transform: rotateY(180deg);
+}
+
+.clickoff {
+    pointer-events: none;
+}
+
+.matched {
+    background: #5AD66F;
+}
+
+.not_matched {
+    background: #F44336;
 }
 /* Конец стилей карточек */
