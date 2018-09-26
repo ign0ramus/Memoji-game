@@ -99,6 +99,8 @@ body {
 /* Начало стилей таймера */
 #timer {
     text-align: center;
+    width: 580px;
+    margin: 0 auto;
 }
 #timer p {
     line-height: 36px;
