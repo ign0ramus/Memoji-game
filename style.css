@@ -6,6 +6,8 @@
 body {
     background-color: #CFD0CF;
     height: 100%;
+    color: #434344;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Конец общих стилей */
@@ -13,9 +15,7 @@ body {
 /* Начало стилей заголовка */
 .title {
     margin: 0;
-    font-family: 'Arial', sans-serif;
     font-size: 42px;
-    color: #434344;
     line-height: 47px;
     margin: 40px auto 27.5px;
     width: 580px;
@@ -29,6 +29,7 @@ body {
     width: 580px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 .card_block {
@@ -95,3 +96,86 @@ body {
     background: #F44336;
 }
 /* Конец стилей карточек */
+/* Начало стилей таймера */
+#timer {
+    text-align: center;
+}
+#timer p {
+    line-height: 36px;
+    font-size: 32px;
+    display: inline;
+    font-weight: bold;
+}
+/* Конец стилей таймера */
+/* Начало стилей для модального окна */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+}
+.hide {
+    display: none;
+}
+.window {
+    text-align: center;
+    width: 400px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.window  h2 {
+    margin-top: 30px;
+    font-size: 48px;
+}
+.window div {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.window button {
+    height: 40px;
+    font-size: 20px;
+    background: linear-gradient(90deg, #22AB93, #19668D );
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.5); 
+    border: none;
+}
+.window button:active {
+    box-shadow: inset 2px 1px 8px rgba(0, 0, 0, 0.5); 
+}
+.window div button {
+    padding: 0 30px;
+    color: white; 
+}
+.window h2 span {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    animation: bounce .4s ease infinite alternate;
+   }
+.window .lose span:nth-child(2) {
+    animation-delay: .1s;
+}
+.window .lose span:nth-child(3) {
+    animation-delay: .2s;
+}
+.window .lose span:nth-child(4) {
+    animation-delay: .3s;
+}
+
+.window .win span:nth-child(2) {
+    animation-delay: .1s;
+}
+.window .win span:nth-child(3) {
+    animation-delay: .2s;
+}
+   /* ANIMATION */
+@keyframes bounce {
+    100% {
+    top: -10px;
+    }
+}
+/* Конец стилей для модального окна */
