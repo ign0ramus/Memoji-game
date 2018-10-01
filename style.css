@@ -182,12 +182,15 @@ body {
 @media (max-width: 670px) {
     .wrapper {
         width: 90vw;
-        height: 90vw;
+        height: 70vw;
         justify-content: center;
+    }
+    .card_block {
+        height: 18vw;
     }
     .card_block__card {
         width: 18vw;
-        height: 18vw;
+        height: 100%;
     }
     #timer {
         width: 50%;
@@ -196,8 +199,12 @@ body {
     }
     .card_block__card--front {
         font-size: 10vw;
+        border: 5px solid white;
     }
     .window {
         width: 100%;
+    }
+    .card_block__card--back {
+        border: 2px solid white;
     }
 }
