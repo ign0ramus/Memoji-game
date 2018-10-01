@@ -199,7 +199,6 @@ body {
     }
     .card_block__card--front {
         font-size: 10vw;
-        border: 5px solid white;
     }
     .window {
         width: 100%;
