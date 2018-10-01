@@ -5,9 +5,8 @@
 }
 body {
     background-color: #CFD0CF;
-    height: 100%;
     color: #434344;
-    font-family: 'Arial', sans-serif;
+    font: 100%/1.5em 'Arial', sans-serif;
 }
 
 /* Конец общих стилей */
@@ -15,10 +14,9 @@ body {
 /* Начало стилей заголовка */
 .title {
     margin: 0;
-    font-size: 42px;
+    font-size: 2em;
     line-height: 47px;
-    margin: 40px auto 27.5px;
-    width: 580px;
+    margin: 2% auto; 
     text-align: center;
 }
 
@@ -29,20 +27,20 @@ body {
     width: 580px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
 }
 
 .card_block {
     cursor: pointer;
     perspective: 600px;
-    margin: 12.5px;
+    margin: 2%;
 }
 
 .card_block__card {
     transform-style: preserve-3d;
     width: 120px;
     height: 120px;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .side {
@@ -181,3 +179,25 @@ body {
     }
 }
 /* Конец стилей для модального окна */
+@media (max-width: 670px) {
+    .wrapper {
+        width: 90vw;
+        height: 90vw;
+        justify-content: center;
+    }
+    .card_block__card {
+        width: 18vw;
+        height: 18vw;
+    }
+    #timer {
+        width: 50%;
+        margin: 0 auto;
+
+    }
+    .card_block__card--front {
+        font-size: 10vw;
+    }
+    .window {
+        width: 100%;
+    }
+}
